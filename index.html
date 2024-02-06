@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="index.js"></script>
+</head>
+<body>
+    <h1>Каталог товаров</h1>
+
+    <br>
+
+    <div class="catalog">
+        <div class="punct">
+            <button id="btn1" onclick="addPunct2()">+</button>
+
+            <div class="book">
+                <div class="red"></div>
+                Книги
+            </div>
+        </div>
+
+
+        <div class="per ccc" id="perv">
+            <div class="punct2">
+                <button>+</button>
+    
+                <div class="book">
+                    <div class="red"></div>
+                    Отечественные
+                </div>
+            </div>
+    
+            <div class="punct2">
+                <button id="btn2" onclick="addPunct3()">+</button>
+    
+                <div class="book">
+                    <div class="red"></div>
+                    Зарубежные
+                </div>
+            </div>
+        
+
+
+
+            <div class="ccc" id="perv2">
+                <div class="punct3">
+                    <button>.</button>
+                
+                    <div class="book">
+                        <div class="red"></div>
+                        Детективы
+                    </div>
+                </div>
+            
+                <div class="punct3">
+                    <button>.</button>
+                
+                    <div class="book">
+                        <div class="red"></div>
+                        Научная фантастика
+                    </div>
+                </div>
+            
+                <div class="punct3">
+                    <button>.</button>
+                
+                    <div class="book">
+                        <div class="red"></div>
+                        Исторические
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+
+
+        <div class="punct">
+            <button id="btn3" onclick="addPunct2_2()">+</button>
+
+            <div class="book">
+                <div class="red"></div>
+                DVD
+            </div>
+        </div>
+
+
+        <div class="ccc" id="perv4">
+            <div class="punct2">
+                <button id="btn4" onclick="addPunct3_2()">+</button>
+    
+                <div class="book">
+                    <div class="red"></div>
+                    Отечественные
+                </div>
+            </div>
+    
+    
+    
+            <div class="ccc" id="perv3">
+                <div class="punct3">
+                    <button>.</button>
+        
+                    <div class="book">
+                        <div class="red"></div>
+                        Детективы
+                    </div>
+                </div>
+        
+                <div class="punct3">
+                    <button>.</button>
+        
+                    <div class="book">
+                        <div class="red"></div>
+                        Научная фантастика
+                    </div>
+                </div>
+        
+                <div class="punct3">
+                    <button>.</button>
+        
+                    <div class="book">
+                        <div class="red"></div>
+                        Исторические
+                    </div>
+                </div>
+            </div>
+    
+    
+    
+            <div class="punct2">
+                <button>+</button>
+    
+                <div class="book">
+                    <div class="red"></div>
+                    Зарубежные
+                </div>
+            </div>
+        </div>
+
+        
+    </div>
+
+
+    <script>
+        const cat = document.getElementById("perv")
+        const cat1 = document.getElementById("perv2")
+        const cat2 = document.getElementById("perv3")
+        const cat3 = document.getElementById("perv4")
+
+        function addPunct2(){
+            let btn1 = document.getElementById("btn1")
+            cat.classList.toggle("ccc")
+            btn1.innerText =  btn1.innerText == "-" ? "+" : "-"
+        }
+
+        function addPunct3(){
+            let btn2 = document.getElementById("btn2")
+            cat1.classList.toggle("ccc")
+            btn2.innerText =  btn2.innerText == "-" ? "+" : "-"
+        }
+
+        function addPunct3_2(){
+            let btn3 = document.getElementById("btn4")
+            cat2.classList.toggle("ccc")
+            btn3.innerText =  btn3.innerText == "-" ? "+" : "-"
+        }
+
+        function addPunct2_2(){
+            let btn4 = document.getElementById("btn3")
+            cat3.classList.toggle("ccc")
+            btn4.innerText =  btn4.innerText == "-" ? "+" : "-"
+        }
+    </script>
+</body>
+</html>
